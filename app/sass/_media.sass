@@ -1,0 +1,753 @@
+@import "_vars"
+
+/*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1480px)
+	section.accommodation .cards .card .card-header h3
+		font-size: 1.8em
+	.hero-container
+		width: 50%
+@media only screen and (max-width : 1366px)
+	section.welcome .txt-wrapper .welcome-description
+		width: 35%
+	section.welcome .txt-wrapper .image-wrapper
+		left: 10%
+	section.welcome .txt-wrapper .welcome-description
+		padding: 1em 5.25% 0
+	.img-gallery-nav
+		top: 12%
+	.wrapper
+		width: 80%
+	section.facilities .inroom-facilities ul
+		margin-right: 2em
+	.header-sidebar .spec-offers
+		width: 36vh
+	.header-sidebar .social-btn>ul
+		padding-top: 20px
+	section.hoverview .overview
+		padding: 3em
+		left: 8%
+	section.excursions .cards
+		width: 90vw
+	section.excursions .cards .card .card-caption .card-title
+		font-size: 1.2em											
+@media only screen and (max-width : 1280px)
+
+
+	section.hoverview .overview
+		width: 20em
+		padding: 4em 3em 4em		
+	section.welcome .txt-wrapper
+		width: 80%
+		margin: 4em 0 4em 8em
+	section.welcome .txt-wrapper .welcome-description
+		width: 35%
+		padding: 1em 0 0	
+	section.accommodation .cards 
+		width: 90vw
+		.card
+			max-width: 48%
+			margin: 0 1em 4em 1em
+	.img-gallery-nav
+		top: 4px			
+	section.testimonial .testimonial-slider .testimonial-slide .testimonial-wrap
+		max-width: 70%
+	section.facilities .inroom-facilities ul
+		margin-right: 2em
+	section.facilities .description, section.facilities .h-facilities
+		margin-bottom: 3em
+	header nav ul li
+		padding: 1.5em 1em 1.5em 1em			
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	header nav ul > li
+		margin: 0 0 0 0
+	header>nav>ul>li:last-child
+		margin: 0
+	header nav ul li
+		padding: 1.5em 0.8em 1.5em 0.8em			
+	/**/
+
+@media only screen and (max-width : 1080px)
+	.mobile-hidden
+		display: none
+	.mobile-visible
+		display: block
+	.mobile-hidden1
+		display: block
+@media only screen and (max-width : 1024px)
+	section.welcome .txt-wrapper
+		width: 90%
+		margin: 4em 0 4em 5em
+		text-align: left
+	section.welcome .txt-wrapper .image-wrapper img.image-horiz
+		left: -100px
+	section.accommodation .cards
+		width: 90%	
+	section.accommodation .cards .card .card-header h3
+		font-size: 1.8em	
+	ul.mobile-nav
+		.timel
+			i, p
+				color: rgba($ddgray, .4)
+			i 
+				font-size: 0.6em
+				line-height: 6em
+			p 
+				font-size: 3em	
+		li 
+			font-size: 3em		
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	.activity-card
+		max-width: 320px
+		margin-right: 20px
+		margin-bottom: 20px
+		&:nth-child(even)
+			margin-right: 0	
+		
+@media only screen and (max-width : 768px)
+	
+	body
+		max-width: 100vw
+	section.accommodation .cards .card
+		opacity: 1
+	.btn 
+		font-size: 1em
+	.hidden
+		display: none
+	.mobile-hidden
+		display: none
+	.mobile-visible
+		display: block
+	.header-composition .composition
+		width: 80%
+	.title-center
+		text-align: center
+		margin: 2em 0
+		opacity: 1		
+		h2
+			font-size: 2.4em
+			text-align: center
+	section.welcome
+		position: relative
+		.txt-wrapper
+			width: 100%
+			padding: 16px
+			margin: 0
+			background-image: none
+			.image-wrapper
+				width: 100%
+				height: 100%
+				padding: 0
+				left: 0%
+				margin-bottom: 2em
+				img.image-vert
+					position: relative
+					margin: auto
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+					width: 80%
+			.welcome-description
+				position: relative
+				text-align: center
+				width: 100%
+				padding: 0
+				float: left
+				h3
+					font-size: 1.6em
+				p 
+					display: block
+					position: relative
+					margin: auto 10%
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+					width: 80%	
+			.mobile-center-btn
+				text-align: center		
+	section.hoverview .slick-track
+		min-height: 100px
+	section.hoverview
+		width: 100%
+		min-height: 60vh
+		min-height: auto
+		position: relative
+		flex-direction: column
+		.overview
+			width: 100%
+			left: 0
+			text-align: left
+			padding: 16px
+			box-sizing: border-box
+			position: relative
+			h3
+				font-size: 2.4em
+				margin-bottom: 1em
+				margin-top: 5%
+				text-align: center
+			.list-column
+				padding: 0
+				margin: 0
+				list-style: none
+				display: flex
+				flex-flow: row wrap
+				justify-content: space-around
+				.ico-txt
+					width: 40%	
+		.img-slider
+			left: 0
+			position: relative
+		.slick-dots
+			display: none
+	section.excursions
+		.cards	
+			width: 90vw
+			.card			
+				max-width: 50vw
+				min-width: 30vw
+				.card-caption
+					text-align: left
+					.card-title
+						font-size: 1.1em
+						 			
+	section.accommodation
+		padding: 16px
+		.cards
+			width: 100vw
+			height: auto
+			justify-content: center
+			.card
+				flex: 1 1 4em
+				margin: 0 1em 2em 1em
+				max-width: 44vw
+				min-width: 20vw
+				.card-header, .card-description
+					padding: 1em 1em 0 1em
+				.card-title
+					font-size: 1.2em
+				.card-description p 
+					font-size: 0.9em	
+	section.banner
+		.action-text
+			h3 
+				text-align: center
+				font-size: 1.4em
+	section.testimonial
+		margin: 0
+		.title-center
+			box-sizing: border-box
+		.slick-dots
+			bottom: -5%
+			position: absolute
+		.testimonial-slider
+			.testimonial-slide
+				padding: 0 1.5em 3em 1.5em
+				align-items: center
+				justify-content: center				
+				.testimonial-wrap
+					max-width: 100%
+					flex-direction: column
+					padding: 2em 1.5em
+					.user-info
+						width: 100%	
+						display: flex
+						flex-direction: column
+						align-items: center
+						justify-content: center
+						margin-bottom: 1em
+					.testimonial-txt
+						width: 100%	
+						p 
+							&:first-child:before
+								left: -0.2em
+								top: 0em
+	section.img-gallery
+		.title-center
+			padding-left: 16px
+			box-sizing: border-box
+		.slider-nav
+			display: none
+		.slider-for
+			width: 100vw		
+	footer
+		background-image: none
+		background-color: $ddgray
+		.footer-wrapper
+			justify-content: center
+			position: relative
+			.footer-logo
+				flex: 0 1 auto
+				width: 100%
+				display: block
+				text-align: center
+				img 
+					width: 50%
+					margin: 0 auto
+				.footer-social 
+					text-align: center
+					i.fa.fa-circle
+						transition: 0.3s all ease-out
+						color: $orange
+	footer .footer-wrapper ul>li:first-child
+		font-size: 1.2em					
+	#content > section.hoverview > div.img-slider.slick-initialized.slick-slider > button.slick-next.slick-arrow, #content > section.img-gallery > div.slider-for.slick-initialized.slick-slider > button.slick-next.slick-arrow	
+		right: 14px
+	#content > section.hoverview > div.img-slider.slick-initialized.slick-slider > button.slick-prev.slick-arrow, #content > section.img-gallery > div.slider-for.slick-initialized.slick-slider > button.slick-prev.slick-arrow
+		left: 14px
+		position: absolute
+		z-index: 999
+	#content > section.img-gallery > div.slider-for.slick-initialized.slick-slider
+		margin-bottom: 0
+	.activity-card
+		width: 100%	
+	section.inner-slider .inner-slider-title 
+		h2
+			font-size: 3em
+		p 
+			font-size: 1.2em
+	section.facilities > div.inroom-facilities > ul:nth-child(5)
+		margin-left: 86px
+	.wrapper
+		width: 90%	
+	section.leisure
+		.title-center
+			margin-bottom: 3em
+			margin-top: 0
+		.activities-list
+			width: 100%
+			ul
+				margin-left: 2em
+	section.getintouch
+		.contact-info
+			width: 50%
+			ul.contact-descr
+				margin: 1em 0 3em 0 
+				li 
+					a 
+						font-size: 0.8em	
+		.git-form
+			width: 50%
+			.contact-form
+				.form-field
+					margin: 1em 0
+					padding: 0 0.4em
+					.btn
+						margin: 0
+						float: right
+	section.ptransfer
+		width: 100%
+		overflow: hidden
+		background-color: $llgray
+		.title-center
+			margin-bottom: 1em
+		.transfer-vars
+			text-align: left
+			width: 100%
+			margin-bottom: 1em
+			.small-title
+				margin-bottom: 1.4em
+				h3 
+					font-size: 1.5em
+				span 
+					font-style: italic
+					font-size: 0.8em
+					color: rgba($dgray, 0.5)
+				hr 
+					width: 150px
+					margin: 1% 0	
+			ul 
+				margin-left: 0
+				li 	
+					margin-bottom: 1.2em
+					font-size: 1em				
+					i 
+						display: none
+	section.schedule										
+		width: 100%
+		overflow: hidden
+		text-align: center
+		.small-title
+			margin: 4% 0
+			h3
+				font-size: 1.9em
+		table
+			width: 100%
+			th 
+				h4
+					color: $blue				
+					font-size: 1em
+					margin-bottom: 0.6em
+				span
+					font-size: 0.8em	
+			tbody
+				tr							
+					td
+						font-size: 0.9em
+						&:nth-child(2)
+							font-size: 0.7em
+							color: rgba($dgray,.6)
+		.transfer-dop
+			width: 100%
+			font-size: 1em
+	section.gal .wrapper .masonry
+		column-count: 2
+	section.hoverview .overview ul>li
+		font-size: 1em
+	section.leisure .activities-list ul li
+		font-size: 1em
+	.hero-container
+		padding: 2em
+		width: 70%
+	section.leisure .title-center
+		margin-top: 1em
+	section.excursion .about-excursion .title-center h2 
+		text-align: left
+	section.excursion .excursion-nav
+		width: 35%											
+																												
+	/**/				
+		
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.1024-hidden
+		display: none
+	section.welcome .txt-wrapper .welcome-description
+		text-align: left 
+		p
+			margin: auto 2%
+			width: 90%
+	.title-center h2
+		font-size: 2em
+	section.accommodation .cards .card
+		opacity: 1
+		min-width: 90vw	
+	.title-center
+		opacity: 1	
+	section.accommodation .cards .card .card-header h3
+		font-size: 1.6em	
+	.mobile-visible
+		display: block
+	section.hoverview
+		width: 100%
+		min-height: auto
+		position: relative
+		flex-direction: column
+		.overview
+			width: 100%
+			left: 0
+			text-align: left
+			padding: 16px 16px 2em 16px
+			box-sizing: border-box
+			position: relative
+			h3
+				font-size: 2.4em
+				margin-bottom: 1em
+				margin-top: 5%
+				text-align: center
+			.list-column
+				padding: 0
+				margin: 0
+				list-style: none
+				display: flex
+				flex-flow: row wrap
+				justify-content: space-around
+				.ico-txt
+					width: 100%	
+	footer	
+		position: relative
+		margin: 0 auto
+		flex-flow: column wrap
+		background-image: none
+		max-width: 100%
+		.footer-wrapper 
+			background-color: $ddgray
+			max-width: 100%
+			display: flex
+			flex-flow: column wrap
+			align-items: start
+			justify-content: space-between
+			position: relative
+			padding: 10%
+			.footer-logo
+				text-align: center
+				flex: 2
+				align-items: center
+				justify-content: center
+				img
+					width: 70%
+					margin: 0 auto 2em auto
+				p 
+					color: #EAEAEA
+				ul 
+					text-align: center
+			ul li 
+				line-height: 2em
+	//hero title
+	.hero-parent
+		height: 100vh
+		overflow: hidden
+	
+	.hero-container
+		padding: 3em 2em
+		width: 80%
+		height: 30%
+		h1
+			color: #fff
+			font-size: 2em			
+		p 
+			font-size: 1em			
+		hr 
+			width: 6em				
+				
+								
+	#content > footer > div > div > div:nth-child(5) > div > ul
+		margin-bottom: 4em
+	#content > section.img-gallery > div.slider-for.slick-initialized.slick-slider > button.slick-next.slick-arrow	
+		right: 14px
+	#content > section.img-gallery > div.slider-for.slick-initialized.slick-slider > button.slick-prev.slick-arrow
+		left: 14px
+		position: absolute
+		z-index: 999
+	.wrapper
+		width: 90%
+	section.inner-slider 
+		height: 100vh	
+	section.inner-slider .inner-slider-title
+		width: 60% 
+		h2
+			font-size: 2em
+		p 
+			font-size: 1em	
+	section.facilities .description, section.facilities .h-facilities
+		width: 100%	
+	section.excursions
+		.cards	
+			width: 90vw
+			.card			
+				max-width: 100vw
+				min-width: 90vw
+				margin: 0 0 2em 0
+				.card-caption
+					text-align: left
+					.card-title
+						font-size: 1.1em
+	section.leisure
+		.title-center
+			margin-bottom: 3em
+			margin-top: 1em
+		.activities-list
+			width: 100%
+			ul
+				margin-left: 0em
+				width: 80% 
+	section.getintouch
+		.contact-info
+			width: 100%
+			ul.contact-descr
+				margin: 1em 0 3em 0 
+				li 
+					a 
+						font-size: 0.8em	
+		.git-form
+			width: 100%
+			.contact-form
+				.form-field
+					margin: 1em 0
+					padding: 0 0.4em
+					clear: both
+					width: 100%
+					.btn
+						margin: 0
+						float: right
+	section.ptransfer
+		width: 100%
+		overflow: hidden
+		background-color: $llgray
+		.title-center
+			margin-bottom: 1em
+		.transfer-vars
+			text-align: left
+			width: 100%
+			margin-bottom: 1em
+			.small-title
+				margin-bottom: 1.4em
+				h3 
+					font-size: 1.5em
+				span 
+					font-style: italic
+					font-size: 0.8em
+					color: rgba($dgray, 0.5)
+			ul 
+				margin-left: 0
+				li 	
+					margin-bottom: 1.2em
+					font-size: 1em				
+					i 
+						display: none
+	section.schedule										
+		width: 100%
+		overflow: hidden
+		text-align: center
+		.small-title
+			margin: 4% 0
+			h3
+				font-size: 1.9em
+		table
+			width: 100%
+			th 
+				h4
+					color: $blue				
+					font-size: 1em
+					margin-bottom: 0.6em
+				span
+					font-size: 0.8em	
+			tbody
+				tr							
+					td
+						font-size: 0.9em
+						&:nth-child(2)
+							font-size: 0.7em
+							color: rgba($dgray,.6)
+		.transfer-dop
+			width: 100%
+			font-size: 1em
+	section.hoverview .overview ul>li
+		font-size: 1em
+	section.testimonial .slick-dots
+		bottom: 0
+	section.gal .controls .control-label
+		padding: .4em 1em
+	section.gal .wrapper .masonry
+		column-count: 1	
+	ul.mobile-nav
+		top: 50px
+		.timel
+			i, p
+				color: rgba($ddgray, .4)
+			i 
+				font-size: 0.5em
+				line-height: 2em
+			p 
+				font-size: 1.4em
+		li 
+			font-size: 2em
+	.1024-hidden
+		display: none
+	section.getintouch .git-form .small-title
+		margin-top: 1.4em
+		padding-left: 0	
+	section.excursion .about-excursion, section.excursion .excursion-nav
+		width: 100%		
+	section.excursion .about-excursion
+		margin-bottom: 2em	
+	section.excursion-slider 
+		.ex-slider
+			width: 90%
+		.ex-slider-nav-prev
+			left: 10px
+		.ex-slider-nav-next
+			right: 10px
+		.flaticon-left-arrow, .flaticon-right-arrow
+			&:before
+				font-size: 30px
+		.ex-slider.slick-initialized.slick-slider
+			i 
+				color: rgba(#fff, 0.5)							
+	
+	/**/
+
+@media only screen and (min-device-width: 320px) and (max-width: 736px) and (orientation: landscape)
+	ul.mobile-nav
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-between
+		width: 80%
+		top: 3em	
+		li 
+			font-size: 1.8em
+			width: 50%
+			margin-bottom: 0.6em
+			&:last-child
+				width: 100%
+				.timel
+					i 
+						line-height: 1em
+					p 
+						font-size: 1em	
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	section.gal .controls .control-label
+		padding: .4em 1em
+		font-size: 0.8em
+	section.hoverview .overview ul>li
+		font-size: 0.9em
+	ul.mobile-nav
+		top: 50px
+		.timel
+			i, p
+				color: rgba($ddgray, .4)
+			i 
+				font-size: 0.5em
+				line-height: 2em
+			p 
+				font-size: 1.4em
+		li 
+			margin-bottom: 0.7em
+			font-size: 1.8em
+	.1024-hidden
+		display: none
+	//hero title
+	.hero-parent
+		height: 100vh
+		overflow: hidden
+	
+	.hero-container
+		padding: 2em 1em
+		width: 80%
+		height: 30%
+		h1
+			color: #fff
+			font-size: 2em			
+		p 
+			font-size: 1em			
+		hr 
+			width: 6em					
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+/* Medium screens*/
+//@media all and (min-width: 768px)
+/**/

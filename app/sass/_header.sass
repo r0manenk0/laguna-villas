@@ -1,0 +1,423 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 16px
+	font: inherit
+	vertical-align: baseline
+	color: $dgray
+	outline: none
+hr 
+			width: 100%
+			height: 1px
+			background-color: rgba($dgray, .1)
+			border: none
+			margin: 3% 0
+.link 
+	transition: 250ms all ease-out
+	text-decoration: none
+	margin: 0 2px
+	position: relative
+	&:before
+		position: absolute
+		margin: 0 auto
+		top: 100%
+		left: 0
+		width: 100%
+		height: 1px
+		background-color: $blue
+		content: ''
+		transition: all .5s ease-out
+	&:hover:before
+		background-color: $dgray	
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 
+	display: block 
+/*h2, h3, h4, h5, h6
+	font-family: gothambold*/
+h2
+	font-size: 48px
+h3 
+	font-size: 36px	
+p 
+	font-size: 16px
+	line-height: 24px
+b 
+	font-family: gothamregular
+
+
+ol, ul 
+	list-style: none 
+
+blockquote, q 
+	quotes: none 
+
+blockquote 
+	&:before, &:after 
+		content: ''
+		content: none 
+
+q 
+	&:before, &:after 
+		content: ''
+		content: none; 
+
+table 
+	border-collapse: collapse
+	border-spacing: 0
+
+body
+	font-size: 16px
+	min-width: 320px
+	width: 100%
+	font-family: $gothaml
+	overflow-x: hidden
+	opacity: 1
+	-webkit-font-smoothing: antialiased
+	text-rendering: optimizeLegibility
+	user-select: none
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+.wrapper
+	width: 70%
+	display: block
+	overflow: hidden
+	margin: 4% auto	
+.title-innerp
+	width: 100%
+	text-align: center
+	margin-bottom: 4%
+	transition: all 1s ease-out
+	h2 
+		text-align: center
+		span 
+			color: $blue	
+
+#loader
+	height: 100%
+	width: 100%
+	position: fixed
+	left: 0
+	bottom: 0
+	right: 0
+	top: 0
+	display: flex
+	flex-flow: row nowrap
+	align-items: center
+	justify-content: center
+	z-index: 9000
+	background-color: $blue
+	img
+		width: 40%
+		opacity: 1
+.btn 
+	display: inline-block
+	color: #fff
+	font-size: 1.2em 
+	background-color: $orange
+	text-decoration: none
+	padding: 0.8em 1.6em
+	margin: 2em 0 
+	border-radius: 10em
+	letter-spacing: 0.1em
+	box-shadow: 0 4px 10px rgba(0,0,0,.12), 0 2px 6px rgba(0,0,0,.24)
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+	&:hover
+		box-shadow: none
+.ghost-btn			
+	display: inline-block
+	color: #fff
+	font-size: 0.8em 
+	background-color: transparent
+	border: 1px solid #fff
+	text-decoration: none
+	padding: 0.8em 1.6em
+	margin: 1.6em 0 1em 0 
+	border-radius: 10em
+	letter-spacing: 0.1em
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+	&:hover
+		background-color: #FFF
+		color: $blue
+section
+	display: block
+	box-sizing: border-box
+	width: 100%
+.fixedpos
+	overflow: hidden
+.wrap
+	width: 100%
+	max-width: 1920px
+	margin-left: auto
+	margin-right: auto
+.hidden
+	display: none
+.container
+	margin: 0 auto
+	width: 75%
+	max-width: 162em
+.row	
+	clear: both
+	width: 100%
+	float: left
+	padding-left: 8.33333%
+	padding-right: 8.33333% 
+.mobile-visible
+		display: none	  
+
+header
+	position: fixed
+	background-color: #FFF
+	top: 0
+	left: 0
+	min-height: 40px
+	width: 100%
+	z-index: 200
+	transform: translate3d(0, 0, 0)
+	transition: padding 0.2s, transform 0.3s ease, background 0.2s linear, border-bottom 0.2s linear
+	min-width: 320px
+	border-bottom: 1px solid $llgray
+	>
+	div.logo
+		float: left
+		position: relative
+		margin: 0.1em 1em
+		width: 140px
+	nav
+		display: inline-block
+		float: right
+		ul 
+			li
+				display: inline-block
+				vertical-align: middle
+				position: relative
+				padding: 1.5em 1.2em 1.5em 1.2em				
+				a 
+					text-decoration: none
+					font-size: 0.9em
+					display: block
+					transition: all .2s linear					
+					&:hover
+						color: $orange
+				span
+					font-size: 0.9em		
+				i 
+					color: rgba($dgray, .3)		
+
+				
+				ul.subMenu
+					padding: 1px 0 0 0
+					margin-top: 1px
+					text-align: left
+					background-color: #fff
+					padding: 0
+					position: absolute
+					top: 60px
+					left: -20px
+					z-index: -1
+					clear: both
+					box-shadow: 0 2px 10px rgba($dgray, .2)
+					overflow: hidden
+					li	
+						position: relative
+						list-style: none
+						display: list-item
+						border-radius: 0
+						border: none
+						white-space: nowrap
+						padding: 0 1.2em 0 1.2em
+						a 
+							margin: 0
+							padding: 1em
+
+	> nav > ul > li:last-child
+			background-color: $orange
+			text-align: center
+			margin: 0 0 0 1em
+			padding: 0
+			> a 				
+				color: #fff
+				font-family: $gothamr
+				font-size: 1.1em
+				display: block
+				position: relative
+				padding: 1.6em 1.8em
+				&:before, &:after
+					content: ''
+					position: absolute
+					display: block
+					background: #fff
+					width: 5.2em
+					height: 3px
+				&:before
+					top: 1em
+				&:after
+					bottom: 1em
+
+#hamburger
+	border: none
+	width: 60px
+	height: 60px
+	position: fixed
+	margin-top: 30px
+	padding: 15px
+	cursor: pointer
+	top: 0
+	right: 30px
+	background-color: $orange
+	z-index: 8889
+	outline: none
+	.hamb-bar
+		width: 30px
+		height: 2px
+		background-color: #FFF
+		position: relative
+		margin: 6px 0
+		transform-origin: center center
+.over-h		
+	position: relative
+	overflow: hidden
+	height: 100%
+.m-nav
+	width: 0
+	height: 100%
+	position: fixed
+	background-color: $blue
+	top: 50%
+	left: 100%
+	transform: translate(100%, -50%)
+	z-index: 8888
+#mobile-nav-bg
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	right: -100%
+	background-color: $blue
+	z-index: 8888	
+ul.mobile-nav
+	width: 100%
+	position: absolute
+	top: 100px
+	left: 0
+	z-index: 1000
+	li
+		position: relative
+		margin-bottom: 30px
+		left: 100%
+		cursor: pointer
+		color: #fff
+		font-family: gothambold
+		font-size: 2em
+		opacity: 0
+		&:last-child a
+			color: $sideblue
+		a 
+			text-decoration: none
+			color: #fff
+	
+.fixedPosition
+	position: fixed
+
+.header-sidebar
+	background-color: rgba($sideblue, .8)	
+	position: absolute
+	right: 0
+	top: 75px
+	height: calc(100vh - 75px)
+	z-index: 4
+	display: flex
+	flex-direction: column
+	align-items: center
+	width: 100px
+	.timel
+		text-align: center
+		padding: 1em 0.2em
+		i 
+			color: #fff
+			font-size: 12px
+		p 
+			color: #fff	
+
+	.social-btn > ul
+		padding-top: 50px			
+	.social-btn > ul > li  
+		padding-bottom: 1em
+		> a > span > i.fa-circle
+			color: rgba(255, 255, 255, 0.2)
+			font-size: 2em
+	.social-btn > ul > li > a:hover		 
+		> span > i.fa-circle
+			transition: 0.3s all ease-out
+			color: $orange
+
+	.spec-offers
+		position: absolute		
+		right: 0
+		bottom: 0
+		left: 50%
+		transform-origin: left					
+		transform: rotate(-90deg)
+		background-color: rgba(white, .2)
+		width: 30vh
+		height: 100px
+		display: flex
+		align-items: center
+		justify-content: center 
+		text-align: center
+		cursor: pointer	
+		.spec-txt
+			position: relative
+			color: #fff
+.header-composition
+	height: 100vh
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
+	margin: 0
+	overflow: hidden
+	.offers
+		position: absolute
+		bottom: 70px
+		right: 70px
+		z-index: 3
+		.offer-notify
+			cursor: pointer
+			opacity: 0
+			background: #fff 
+			padding: 10px
+			width: 240px
+			max-height: 80px
+			margin: 30px 0 0 0
+			position: relative
+			right: -300px				
+			p 
+				color: $dgray
+				font-family: $gothaml
+				line-height: 1em
+	.composition
+		width: 50%
+		text-align: center
+		z-index: 6
+		img 
+		a 
+			i 
+				color: #fff
+	.header-bg
+		background-image: url(/img/header-bg.jpg)
+		position: absolute
+		top: 0%
+		right: 0%
+		bottom: 0%
+		left: 0%
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: 50% 50%
+		opacity: 1
+		z-index: 0	

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#333">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#333">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#333">
+	<script src="js/scripts.min.js"></script>
+</head>
+
+<body id="main">
+<div class="post-body">
+					<div id="container"></div>
+					
+					<style>
+					/*Premier niveau */	
+					#animation {width: 920px;height:450px;position:relative;overflow:hidden;z-index: 10;}
+					#circle {width: 400px;height: 400px;border-radius: 200px;font-size: 11px;text-align:center;background-color:#FFCC99;position: absolute;left:260px;top:0px;}
+					#animation a {color:#FFF;}
+					#animation a:hover {color:#FFF;text-decoration: none;}
+					#animation a:active {color:#FFF;text-decoration: none;}
+					#animation a:visited {color:#FFF;text-decoration: none;}									
+					#circle_menu1_choix1 {
+						width: 170px;
+						height: 170px;
+						border-radius: 85px;
+						font-size: 15px;
+						line-height: 170px;
+						text-align: center;
+						background-color: #FF9900;
+						position: absolute;
+						left: 375px;
+						top: 5px;
+					}
+					#circle_menu1_choix2 {
+						width: 170px;
+						height: 170px;
+						border-radius: 85px;
+						font-size: 15px;
+						line-height: 170px;
+						text-align: center;
+						background-color: #952268;
+						position: absolute;
+						left: 285px;
+						top: 180px;
+					}
+					#circle_menu1_choix3 {
+						width: 170px;
+						height: 170px;
+						border-radius: 85px;
+						font-size: 15px;
+						line-height: 170px;
+						text-align: center;
+						background-color: #009966;
+						position: absolute;
+						left: 465px;
+						top: 180px;
+					}
+					/*Second niveau : diagnostic*/
+					#circle_menu2_choix1 {width:125px;height:125px;border-radius:75px;font-size:11px;text-align:center;background-color:#FF9900;position:absolute;left:200px;top:0px;}
+					#circle_menu2_choix2 {width: 125px;height: 125px;border-radius: 75px;font-size:11px;text-align: center;background-color: #FF9900;position: absolute;left:330px;top:30px;}
+					#circle_menu2_choix3 { width: 125px;height: 125px;border-radius: 75px;font-size:11px;text-align: center;background-color: #FF9900;position: absolute;left:450px;top: 85px;}
+					#circle_menu2_choix4 { width: 125px;height: 125px;border-radius: 75px;font-size:11px;text-align: center;background-color: #FF9900;position: absolute;left: 530px;top: 190px;}
+					#circle_menu2_choix5 { width: 125px;height: 125px;border-radius: 75px;font-size:11px;text-align: center;background-color: #FF9900;position: absolute;left: 570px;top: 315px;}
+					
+					/*Second niveau : Choix stratégiques*/
+					#circle_menu3_choix1 {width:125px;height:125px;border-radius:75px;font-size:11px;text-align:center;background-color:#952268;position:absolute;left:200px;top:0px;}
+					#circle_menu3_choix2 {width: 125px;height: 125px;border-radius: 75px;font-size:11px;text-align: center;background-color: #952268;position: absolute;left:330px;top:30px;}
+					#circle_menu3_choix3 { width: 125px;height: 125px;border-radius: 75px;font-size:11px;text-align: center;background-color: #952268;position: absolute;left:450px;top: 85px;}
+					#circle_menu3_choix4 { width: 125px;height: 125px;border-radius: 75px;font-size:11px;text-align: center;background-color: #952268;position: absolute;left: 530px;top: 190px;}
+					#circle_menu3_choix5 { width: 125px;height: 125px;border-radius: 75px;font-size:11px;text-align: center;background-color: #952268;position: absolute;left: 570px;top: 315px;}
+					
+					/* Second niveau : Déploiement stratégique */
+					#circle_menu4_choix1 {width:125px;height:125px;border-radius:75px;font-size:11px;text-align:center;background-color:#009966;position:absolute;left:200px;top:0px;}
+					#circle_menu4_choix2 {width: 125px;height: 125px;border-radius: 75px;font-size:11px;text-align: center;background-color: #009966;position: absolute;left:330px;top:30px;}
+					#circle_menu4_choix3 { width: 125px;height: 125px;border-radius: 75px;font-size:11px;text-align: center;background-color: #009966;position: absolute;left:450px;top: 85px;}
+					#circle_menu4_choix4 { width: 125px;height: 125px;border-radius: 75px;font-size:11px;text-align: center;background-color: #009966;position: absolute;left: 530px;top: 190px;}
+					#circle_menu4_choix5 { width: 125px;height: 125px;border-radius: 75px;font-size:11px;text-align: center;background-color: #009966;position: absolute;left: 570px;top: 315px;}
+					
+					/*Centrage des éléments verticaux*/
+					#open {position: relative;  top: 50%;  -webkit-transform: translateY(-50%);  -ms-transform: translateY(-50%);  transform: translateY(-50%);}
+					
+					#open21 {position: relative;  top: 50%;  -webkit-transform: translateY(-50%);  -ms-transform: translateY(-50%);  transform: translateY(-50%);}
+					#open22 {position: relative;  top: 50%;  -webkit-transform: translateY(-50%);  -ms-transform: translateY(-50%);  transform: translateY(-50%);}
+					#open23 {position: relative;  top: 50%;  -webkit-transform: translateY(-50%);  -ms-transform: translateY(-50%);  transform: translateY(-50%);}
+					#open24 {position: relative;  top: 50%;  -webkit-transform: translateY(-50%);  -ms-transform: translateY(-50%);  transform: translateY(-50%);}
+					#open25 {position: relative;  top: 50%;  -webkit-transform: translateY(-50%);  -ms-transform: translateY(-50%);  transform: translateY(-50%);}
+					
+					#open31 {position: relative;  top: 50%;  -webkit-transform: translateY(-50%);  -ms-transform: translateY(-50%);  transform: translateY(-50%);}
+					#open32 {position: relative;  top: 50%;  -webkit-transform: translateY(-50%);  -ms-transform: translateY(-50%);  transform: translateY(-50%);}
+					#open33 {position: relative;  top: 50%;  -webkit-transform: translateY(-50%);  -ms-transform: translateY(-50%);  transform: translateY(-50%);}
+					#open34 {position: relative;  top: 50%;  -webkit-transform: translateY(-50%);  -ms-transform: translateY(-50%);  transform: translateY(-50%);}
+					#open35 {position: relative;  top: 50%;  -webkit-transform: translateY(-50%);  -ms-transform: translateY(-50%);  transform: translateY(-50%);}
+					
+					#open41 {position: relative;  top: 50%;  -webkit-transform: translateY(-50%);  -ms-transform: translateY(-50%);  transform: translateY(-50%);}
+					#open42 {position: relative;  top: 50%;  -webkit-transform: translateY(-50%);  -ms-transform: translateY(-50%);  transform: translateY(-50%);}
+					#open43 {position: relative;  top: 50%;  -webkit-transform: translateY(-50%);  -ms-transform: translateY(-50%);  transform: translateY(-50%);}
+					#open44 {position: relative;  top: 50%;  -webkit-transform: translateY(-50%);  -ms-transform: translateY(-50%);  transform: translateY(-50%);}
+					#open45 {position: relative;  top: 50%;  -webkit-transform: translateY(-50%);  -ms-transform: translateY(-50%);  transform: translateY(-50%);}
+					</style>
+					<div id="animation">
+						<p><!-- Premier niveau --></p>
+<div id="circle"><a id="open" href="#">Retour</a></div>
+<div id="circle_menu1_choix1"><a id="open11" href="#">Diagnostic stratégique</a></div>
+<div id="circle_menu1_choix2"><a id="open12" href="#">Choix stratégiques</a></div>
+<div id="circle_menu1_choix3"><a id="open13" href="#">Déploiement stratégique</a></div>
+<!-- Second niveau : Diagnostic -->
+<div id="circle_menu2_choix1"><a id="open21" href="/strategique10/le-sommaire/lenvironnement/">L’analyse du macroenvironnement</a></div>
+<div id="circle_menu2_choix2"><a id="open22" href="/strategique10/le-sommaire/analyse-de-industrie/">L’analyse de l’industrie</a></div>
+<div style="font-size:10px;" id="circle_menu2_choix3"><a id="open23" href="/strategique10/le-sommaire/la-capacite-strategique/">Les ressources et compétences</a></div>
+<div id="circle_menu2_choix4"><a id="open24" href="/strategique10/le-sommaire/lintention-strategique/">Les parties prenantes et le gouvernement d’entreprise</a></div>
+<div id="circle_menu2_choix5"><a id="open24" href="/strategique10/le-sommaire/culture-et-strategie/">L’histoire et la culture</a></div>
+<!-- Second niveau : Choix stratégiques -->
+<div id="circle_menu3_choix1"><a id="open31" href="/strategique10/le-sommaire/les-strategies-par-domaine-dactivite/">Les stratégies concurrentielles et les modèles économiques</a></div>
+<div id="circle_menu3_choix2"><a id="open32" href="/strategique10/le-sommaire/la-diversification-et-la-gestion-dun-portefeuille-dactivite/">La diversification et la gestion d’un portefeuille d’activités</a></div>
+<div id="circle_menu3_choix3"><a id="open33" href="/strategique10/le-sommaire/les-strategies-internationnales/">Stratégies internationales</a></div>
+<div id="circle_menu3_choix4"><a id="open34" href="/strategique10/le-sommaire/linnovation-et-lentreprenariat/">Innovation et entrepreneuriat</a></div>
+<div id="circle_menu3_choix5"><a id="open35" href="/strategique10/le-sommaire/fusions-et-acquisitions-alliances-et-partenariats/">Fusions et acquisitions, alliances et partenariats</a></div>
+<!-- Second niveau : Déploiement stratégique -->
+<div id="circle_menu4_choix1"><a id="open41" href="/strategique10/le-sommaire/levaluation-des-strategies/">L’évaluation des stratégies</a></div>
+<div id="circle_menu4_choix2"><a id="open42" href="/strategique10/le-sommaire/les-processus-strategiques/">Processus stratégiques</a></div>
+<div id="circle_menu4_choix3"><a id="open43" href="/strategique10/le-sommaire/strategie-et-organisation/">Stratégie et organisation</a></div>
+<div id="circle_menu4_choix4"><a id="open44" href="/strategique10/le-sommaire/gerer-le-changement-strategique/">Gestion du changement</a></div>
+<div id="circle_menu4_choix5"><a id="open45" href="/strategique10/le-sommaire/la-pratique-de-la-strategie/">Pratique de la stratégie</a></div>
+					</div>
+					<script defer="defer" type="text/javascript">
+
+						function restart() {
+						//hide Premier niveau
+							jQuery('#open').hide();
+							//hide second niveau : diagnostic						
+							jQuery('#circle_menu2_choix1').hide();
+							jQuery('#circle_menu2_choix2').hide();
+							jQuery('#circle_menu2_choix3').hide();
+							jQuery('#circle_menu2_choix4').hide();
+							jQuery('#circle_menu2_choix5').hide();
+							jQuery('#open21').hide();
+							jQuery('#open22').hide();
+							jQuery('#open23').hide();
+							jQuery('#open24').hide();
+							jQuery('#open25').hide();
+							//hide second niveau : Choix stratégiques
+							jQuery('#circle_menu3_choix1').hide();
+							jQuery('#circle_menu3_choix2').hide();
+							jQuery('#circle_menu3_choix3').hide();
+							jQuery('#circle_menu3_choix4').hide();
+							jQuery('#circle_menu3_choix5').hide();
+							jQuery('#open31').hide();
+							jQuery('#open32').hide();
+							jQuery('#open33').hide();
+							jQuery('#open34').hide();
+							jQuery('#open35').hide();
+							//hide second niveau : Déploiement stratégique
+							jQuery('#circle_menu4_choix1').hide();
+							jQuery('#circle_menu4_choix2').hide();
+							jQuery('#circle_menu4_choix3').hide();
+							jQuery('#circle_menu4_choix4').hide();
+							jQuery('#circle_menu4_choix5').hide();
+							jQuery('#open41').hide();
+							jQuery('#open42').hide();
+							jQuery('#open43').hide();
+							jQuery('#open44').hide();
+							jQuery('#open45').hide();
+						}
+						
+						restart();
+						
+						
+						// -------------- MAIN -------------
+						// Retour
+						jQuery('#open').click(function(){							
+							jQuery('#circle').animate({
+								'left' : '260',
+								'top' : '0px',
+								'width' : '400px',
+								'height' : '400px',
+								'fontSize' : '11px',
+								'lineHeight' : '13px'
+							}, "slow").addClass("Moved");
+							jQuery('#circle').fadeIn('slow').css({ backgroundColor : '#FFCC99' });
+							// retour diagnostic
+							restart();
+							
+							jQuery('#circle_menu1_choix1').toggle("slow");
+							jQuery('#open11').toggle("slow");
+							jQuery('#circle_menu1_choix2').toggle("slow");
+							jQuery('#open12').toggle("slow");
+							jQuery('#circle_menu1_choix3').toggle("slow");
+							jQuery('#open13').toggle("slow");								
+						});
+						
+						//Premier niveau : diagnostic
+						jQuery('#open11').click(function(){
+							jQuery('#circle').animate({
+								'left' : '260',
+								'top' : '300px',
+								'width' : '100px',
+								'height' : '100px',
+								'lineHeight' : '13px',
+								'fontSize' : '11px'
+							}, "slow").addClass("Moved");
+							jQuery('#open').toggle("slow");
+							jQuery('#circle_menu1_choix1').toggle("slow");
+							jQuery('#open11').toggle("slow");
+							jQuery('#circle_menu1_choix2').toggle("slow");
+							jQuery('#open12').toggle("slow");
+							jQuery('#circle_menu1_choix3').toggle("slow");
+							jQuery('#open13').toggle("slow");
+							
+							jQuery('#circle_menu2_choix1').toggle("slow");
+							jQuery('#open21').toggle("slow");
+							jQuery('#circle_menu2_choix2').toggle("slow");
+							jQuery('#open22').toggle("slow");
+							jQuery('#circle_menu2_choix3').toggle("slow");
+							jQuery('#open23').toggle("slow");
+							jQuery('#circle_menu2_choix4').toggle("slow");
+							jQuery('#open24').toggle("slow");
+							jQuery('#circle_menu2_choix5').toggle("slow");
+							jQuery('#open25').toggle("slow");
+							
+							jQuery('#circle').fadeIn('slow').css({ backgroundColor : '#FFCC99' });
+							jQuery('#open').html( "Diagnostic stratégique" );
+						});
+						
+						
+						//Second niveau : Choix stratégiques
+						jQuery('#open12').click(function(){
+							jQuery('#circle').animate({
+								'left' : '260',
+								'top' : '300px',
+								'width' : '100px',
+								'height' : '100px',
+								'lineHeight' : '13px',
+								'fontSize' : '11px'
+							}, "slow").addClass("Moved");
+							jQuery('#open').toggle("slow");
+							jQuery('#circle_menu1_choix1').toggle("slow");
+							jQuery('#open11').toggle("slow");
+							jQuery('#circle_menu1_choix2').toggle("slow");
+							jQuery('#open12').toggle("slow");
+							jQuery('#circle_menu1_choix3').toggle("slow");
+							jQuery('#open13').toggle("slow");
+							
+							jQuery('#circle_menu3_choix1').toggle("slow");
+							jQuery('#open31').toggle("slow");
+							jQuery('#circle_menu3_choix2').toggle("slow");
+							jQuery('#open32').toggle("slow");
+							jQuery('#circle_menu3_choix3').toggle("slow");
+							jQuery('#open33').toggle("slow");
+							jQuery('#circle_menu3_choix4').toggle("slow");
+							jQuery('#open34').toggle("slow");
+							jQuery('#circle_menu3_choix5').toggle("slow");
+							jQuery('#open35').toggle("slow");
+							
+							jQuery('#circle').fadeIn('slow').css({ backgroundColor : '#c691af' });
+							jQuery('#open').html( "Choix stratégiques" );
+						});
+						
+						//Second niveau : Déploiement stratégique
+						jQuery('#open13').click(function(){
+							jQuery('#circle').animate({
+								'left' : '260',
+								'top' : '300px',
+								'width' : '100px',
+								'height' : '100px',
+								'lineHeight' : '13px',
+								'fontSize' : '11px'
+							}, "slow").addClass("Moved");
+							jQuery('#open').toggle("slow");
+							jQuery('#circle_menu1_choix1').toggle("slow");
+							jQuery('#open11').toggle("slow");
+							jQuery('#circle_menu1_choix2').toggle("slow");
+							jQuery('#open12').toggle("slow");
+							jQuery('#circle_menu1_choix3').toggle("slow");
+							jQuery('#open13').toggle("slow");
+							
+							jQuery('#circle_menu4_choix1').toggle("slow");
+							jQuery('#open41').toggle("slow");
+							jQuery('#circle_menu4_choix2').toggle("slow");
+							jQuery('#open42').toggle("slow");
+							jQuery('#circle_menu4_choix3').toggle("slow");
+							jQuery('#open43').toggle("slow");
+							jQuery('#circle_menu4_choix4').toggle("slow");
+							jQuery('#open44').toggle("slow");
+							jQuery('#circle_menu4_choix5').toggle("slow");
+							jQuery('#open45').toggle("slow");
+							
+							jQuery('#circle').fadeIn('slow').css({ backgroundColor : '#99CCCC' });
+							jQuery('#open').html( "Déploiement stratégique" );
+						});
+					</script>
+
+				</div>
+	<div class="top" title="Наверх"><div class="i fa fa-angle-up"></div></div>
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu9UhZadPYOXxOSWyBlr3JDt4ME6UsCCc"
+    type="text/javascript"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

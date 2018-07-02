@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#333">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#333">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#333">
+	<style type="text/css"></style>
+
+
+</head>
+<body id="barba-wrapper">
+	<div id="loader">
+		<img id="loader-logo" src="img/logo-light.svg" alt="" >
+	</div>
+
+<div class="barba-container">
+	<header class="mobile-hidden">
+		<div class="logo">
+			<img src="/img/logo.svg" alt="">
+			<div id="navToggle"><a href="#"><span></span></a></div>
+		</div>
+		<nav>
+			<ul class="mainMenu">
+				<li class="menu-item"><a class="menuLink" href="/">Home</a></li>
+				<li class="menu-item">
+					<a class="menuLink" href="accommodation.html">Accommodation <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						<ul class="subMenu">
+							<li><a class="menuLink" href="dbs.html">Deluxe Beach Suite</a></li>
+							<li><a class="menuLink" href="dss.html">Sunrise Beach Suite</a></li>
+						</ul>
+				</li>
+
+				<li class="menu-item"><a class="menuLink" href="activity.html">Activity</a></li>
+				<li class="menu-item"><a class="menuLink" href="location.html">Location</a></li>
+				<li class="menu-item"><a class="menuLink" href="gallery.html">Gallery</a></li>
+				<li class="menu-item"><a class="menuLink" href="contact.html">Contact</a></li>
+				<li><span><i class="fa fa-phone" aria-hidden="true"></i> +66 (0) 76 410 813</span></li>
+				<li><a class="bookLink" href="https://apac.littlehotelier.com/properties/villalagunaresidencedirect" rel="external">Book Now</a></li>
+			</ul>
+		</nav>
+	</header>
+	<button id="hamburger" class="mobile-visible">
+	    	<div class="hamb-bar"></div>
+	    	<div class="hamb-bar"></div>
+	    	<div class="hamb-bar"></div>
+	</button>
+	<nav class="m-nav">
+
+		<div class="over-h">
+			<ul class="mobile-nav mobile-visible">
+			    <li><a class="menuLink" href="/">Home</a></li>
+			    <li><a class="menuLink" href="accommodation.html">Accommodation</a></li>
+			    <li><a class="menuLink" href="activity.html">Activity</a></li>
+			    <li><a class="menuLink" href="location.html">Location</a></li>
+			    <li><a class="menuLink" href="gallery.html">Gallery</a></li>
+			    <li><a class="menuLink" href="contact.html">Contact</a></li>
+			    <li><a class="menuLink" href="https://apac.littlehotelier.com/properties/villalagunaresidencedirect" target="_blank">Book Now</a></li>
+			    <li><div class="timel">
+						<i>Local time</i>
+						<p class="local-time"></p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<aside class="header-sidebar mobile-hidden">
+		<div class="timel">
+			<i>Local time</i>
+			<p class="local-time"></p>
+		</div>
+		<div class="social-btn">
+			<ul>
+				<li><a href="https://www.tripadvisor.com/Hotel_Review-g661285-d2540373-Reviews-Laguna_Villas_Yao_Noi-Ko_Yao_Noi_Phang_Nga_Province.html" target="_blank">
+						<span class="fa-stack fa-lg">
+	  						<i class="fa fa-circle fa-stack-2x"></i>
+	  						<i class="fa fa-tripadvisor fa-stack-1x fa-inverse"></i>
+					</a>
+				</li>
+				<li><a href="https://www.facebook.com/LagunaVillasYaoNoi" target="_blank">
+						<span class="fa-stack fa-lg">
+	  						<i class="fa fa-circle fa-stack-2x"></i>
+	  						<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+					</a>
+				</li>
+				<li><a href="https://www.instagram.com/laguna_villas_yao_noi/" target="_blank">
+						<span class="fa-stack fa-lg">
+	  						<i class="fa fa-circle fa-stack-2x"></i>
+	  						<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+					</a>
+				</li>
+				<li><a href="https://www.youtube.com/channel/UCqFsilaNxDgJTwlNAcpvsfg" target="_blank">
+						<span class="fa-stack fa-lg">
+	  						<i class="fa fa-circle fa-stack-2x"></i>
+	  						<i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="spec-offers">
+		<span class="close-btn"></span>
+			<div class="spec-txt">*Special Offers</div>
+		</div>
+	</aside>
+	<section class="header-composition" id="intro">
+		<div class="offers mobile-hidden">
+			<div class="offer-notify notify">
+				<p>Best Price Guarantee + Direct Benefits</p>
+			</div>
+			<div class="offer-notify notify">
+				<p>Stay minimum 5 nights, get FREE transfer one way</p>
+			</div>
+			<div class="offer-notify notify">
+				<p>FREE use of our Bicycles and Kayaks</p>
+			</div>
+			<div class="offer-notify notify">
+				<p>Get 10% discount in our Restaurant/Bar</p>
+			</div>
+			<div class="offer-notify notify">
+				<p>No prepayment to secure your reservation</p>
+			</div>
+		</div>
+		<div class="composition" id="popup-youtube">
+			<img src="img/logo-light.svg" alt="">
+			<a href="https://www.youtube.com/watch?v=j46NmCZZhco" class="btn vpopup" >Wath video <i class="fa fa-play-circle" aria-hidden="true"></i></a>
+		</div>
+		<div class="header-bg"></div>
+	</section>
+	<section class="welcome">
+		<div class="title-center" id="title-fade">
+				<h2>Welcom to <br><span>Laguna Villas Yao Noi</span></h2>
+			</div>
+		<div class="txt-wrapper" style="background: url(../img/koyao-map.svg) 90% no-repeat">
+			<div class="image-wrapper paralax">
+				<img class="imgp-1 image-vert img-responsive" src="img/parimg1.jpg" alt="">
+				<img class="imgp-2 image-horiz img-responsive mobile-hidden mobile-hidden1" src="img/parimg2.jpg" alt="">
+			</div>
+			<div class="welcome-description">
+				<h3>About <br><span>Koh Yao Noi</span></h3>
+				<p>Laguna Villas is a modern beachside resort located on Koh Yao Noi.
+	In the center of Ao Phang-Nga National Park and most attractive island, Yao Noi is the best starting point to explore the famous marine park and its classic limestone rock formations.
+	Facing this breathtaking scenery, Laguna Villas is ideally situated so you can access by a walking distance many other highlights of Koh Yao Noi.
+	Our Deluxe Villas offer the utmost comfort often sought in a tropical environment so you can experience exhilarating activities and relax in complete serenity.
+	</p>
+			<a href="activity.html" class="btn">Activity</a>
+			</div>
+
+		</div>
+		<div style="clear: both;"></div>
+	</section>
+
+	<section class="hoverview">
+		<div class="trigger"></div>
+		<div class="overview">
+			<h3>Hotel overview</h3>
+			<div class="list-column">
+				<ul class="ico-txt">
+					<li><span class="flaticon-holidays"></span>Express Check-in / Check-out</li>
+					<li><span class="flaticon-boat"></span>Airport transfer</li>
+					<li><span class="flaticon-cutlery"></span>Restaurant and Bar</li>
+					<li><span class="flaticon-swimming-pool"></span>Outdoor Pool</li>
+				</ul>
+				<ul class="ico-txt">
+					<li><span class="flaticon-dummy"></span>Babysitting</li>
+					<li><span class="flaticon-broom"></span>Daily house keeping</li>
+					<li><span class="flaticon-bicycle"></span>Bicycle and Motorbike rental</li>
+					<li><span class="flaticon-wifi"></span>Free Wi-fi in all villas</li>
+				</ul>
+			</div>
+		</div>
+		<div class="img-slider">
+			<div>
+				<img class="img-responsive" src="img/slide-1.jpg" alt="">
+			</div>
+		</div>
+	</section>
+	<section class="accommodation">
+		<div class="title-center" id="title-fade1">
+				<h2>Accommodation</h2>
+				<span>Check out our amazing options</span>
+		</div>
+		<div class="cards">
+			<div class="card">
+
+			<div class="card-image">
+				<img class="img-responsive" src="img/beach_suite.jpg">
+			</div>
+
+			<div class="card-header">
+				<h3 class="card-title">Deluxe Beach Suite</h3>
+			</div>
+
+			<article class="card-description">
+				<p>Located around a beautiful 185 sqm lagoon pool, this spacious villa is elegantly decorated with Thai contemporary art. It features a large living room with sofa, dining table and handy kitchenette, open to a nice sun lounger terrace. The very cosy and separate king-size bedroom with ensuite bathroom leads to a private outdoor rainfall shower. </p>
+			</article>
+			<div class="btn-center">
+				<a href="dbs.html" class="link read-more">Read more</a>
+			</div>
+			<div class="btn-center">
+				<a href="#" class="btn book-now">Book Now</a>
+			</div>
+
+
+
+		</div>
+		<div class="card">
+
+			<div class="card-image">
+				<img class="img-responsive" src="img/sunrise_suite.jpg">
+			</div>
+
+			<div class="card-header">
+				<h3 class="card-title">Deluxe Sunrise Suite</h3>
+			</div>
+
+			<article class="card-description">
+				<p>Located a bit apart from the other villas with a direct sea view, this villa is elegantly decorated with Thai contemporary art. It features a large living room with sofa, dining table and handy kitchenette, open to a nice sun lounger terrace. The very cosy and separate king-size bedroom got an ensuite bathroom with an indoor shower. </p>
+			</article>
+			<div class="btn-center">
+				<a href="dss.html" class="link read-more">Read more</a>
+			</div>
+			<div class="btn-center">
+				<a href="#" class="btn book-now">Book Now</a>
+			</div>
+
+		</div>
+		</div>
+
+	</section>
+	<section class="banner" style="background: url(img/banner.jpg);">
+		<div class="action-text ">
+			<h3>Book directly with us and get more</h3>
+			<ul class="banner-list fa-ul">
+				<li><i class="fa-li fa fa-check"></i>Get the best price! </li>
+				<li><i class="fa-li fa fa-check"></i>FREE use of our Bicycles and Kayaks</li>
+				<li><i class="fa-li fa fa-check"></i>10% discount in our Restaurant/Bar</li>
+				<li><i class="fa-li fa fa-check"></i>Stay minimum 5 nights, get a FREE transfer one way</li>
+				<li><i class="fa-li fa fa-check"></i>No prepayment to secure your reservation</li>
+				<li><i class="fa-li fa fa-check"></i>Special arrival packages, Honeymoon Treats and more...</li>
+
+			</ul>
+			<a href="#" class="btn">Book Now</a>
+			<a href="contact.html" class="link">or contact us directly</a>
+		</div>
+	</section>
+	<section class="testimonial">
+	    <div class="title-center" id="title-fade1">
+	        <h2>Testimonials</h2>
+	        <span><i class="fa fa-tripadvisor" aria-hidden="true" style="color:#1DD8EA;"></i> See what people saying about us</span>
+	    </div>
+
+	<div id="TA_certificateOfExcellence905" class="TA_certificateOfExcellence">
+	<ul id="H8aCv891v" class="TA_links EOXB8W">
+	<li id="8LkA3V" class="qEsYFb">
+	<a target="_blank" href="https://www.tripadvisor.com/Hotel_Review-g661285-d2540373-Reviews-Laguna_Villas_Yao_Noi-Ko_Yao_Noi_Phang_Nga_Province.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/awards/CoE2017_WidgetAsset-14348-2.png" alt="TripAdvisor" class="widCOEImg" id="CDSWIDCOELOGO"/></a>
+	</li>
+	</ul>
+	</div>
+	<script src="https://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=905&amp;locationId=2540373&amp;lang=en_US&amp;year=2017&amp;display_version=2"></script>
+
+
+	    <div class="testimonial-slider">
+	        <div class="testimonial-slide">
+	            <div class="testimonial-wrap">
+	                <div class="user-info">
+	                    <img src="img/hg5.png" alt="">
+	                    <h6>Marie Behar</h6>
+	                    <span>31.07.2017</span>
+	                </div>
+	                <div class="testimonial-txt">
+	                    <blockquote>
+	                        <p>
+	                            Decided to come over for a couple of days as we were in Ao nong and wanted a couple of days on a island feel like we picked the best spot on the island rooms fantastic..pool perfect and the food in restaurant was good...tried a couple of other places but food was ...
+	                        </p>
+	                    </blockquote>
+	                    <a href="#" class="link">read more</a>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="testimonial-slide">
+	            <div class="testimonial-wrap">
+	                <div class="user-info">
+	                    <img src="img/hg5.png" alt="">
+	                    <h6>Marie Behar</h6>
+	                    <span>31.07.2017</span>
+	                </div>
+	                <div class="testimonial-txt">
+	                    <blockquote>
+	                        <p>
+	                            Decided to come over for a couple of days as we were in Ao nong and wanted a couple of days on a island feel like we picked the best spot on the island rooms fantastic..pool perfect and the food in restaurant was good...tried a couple of other places but food was ...
+	                        </p>
+	                    </blockquote>
+	                    <a href="#" class="link">read more</a>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <a href="https://www.tripadvisor.com/Hotel_Review-g661285-d2540373-Reviews-Laguna_Villas_Yao_Noi-Ko_Yao_Noi_Phang_Nga_Province.html" target="_blank" class="btn read-more">All testimonials</a>
+	</section>
+
+	<section class="img-gallery">
+		<div class="title-center" id="title-fade1">
+				<h2>Awesome area views</h2>
+				<span>Photos from our gallery</span>
+		</div>
+		<div class="slider-for">
+			<div class="slide-item">
+				<img class="img-responsive" src="img/3.jpg" alt="">
+			</div>
+			<div class="slide-item">
+				<img class="img-responsive" src="img/4.jpg" alt="">
+			</div>
+			<div class="slide-item">
+				<img class="img-responsive" src="img/2.jpg" alt="">
+			</div>
+			<div class="slide-item">
+				<img class="img-responsive" src="img/1.jpg" alt="">
+			</div>
+			<div class="slide-item">
+				<img class="img-responsive" src="img/2.jpg" alt="">
+			</div>
+			<div class="slide-item">
+				<img class="img-responsive" src="img/3.jpg" alt="">
+			</div>
+			<div class="slide-item">
+				<img class="img-responsive" src="img/4.jpg" alt="">
+			</div>
+			<div class="slide-item">
+				<img class="img-responsive" src="img/2.jpg" alt="">
+			</div>
+		</div>
+		<div class="slider-nav">
+			<div class="slide-item">
+				<img class="img-responsive" src="img/slider-thumbs/3.jpg" alt="">
+			</div>
+			<div class="slide-item">
+				<img class="img-responsive" src="img/slider-thumbs/4.jpg" alt="">
+			</div>
+			<div class="slide-item">
+				<img class="img-responsive" src="img/slider-thumbs/2.jpg" alt="">
+			</div>
+			<div class="slide-item">
+				<img class="img-responsive" src="img/slider-thumbs/1.jpg" alt="">
+			</div>
+			<div class="slide-item">
+				<img class="img-responsive" src="img/slider-thumbs/2.jpg" alt="">
+			</div>
+			<div class="slide-item">
+				<img class="img-responsive" src="img/slider-thumbs/3.jpg" alt="">
+			</div>
+			<div class="slide-item">
+				<img class="img-responsive" src="img/slider-thumbs/4.jpg" alt="">
+			</div>
+			<div class="slide-item">
+				<img class="img-responsive" src="img/slider-thumbs/2.jpg" alt="">
+			</div>
+		</div>
+	</section>
+</div>
+
+		<footer style="background: url(img/footer.jpg);">
+		<div class="footer-wrapper">
+				<div class="footer-logo">
+					<img class="img-responsive" src="img/logo-light.svg" alt="">
+					<ul class="footer-social">
+							<li><a href="#">Follow us</a></li>
+							<li><a href="https://www.tripadvisor.com/Hotel_Review-g661285-d2540373-Reviews-Laguna_Villas_Yao_Noi-Ko_Yao_Noi_Phang_Nga_Province.html" target="_blank">
+									<span class="fa-stack fa-lg">
+  									<i class="fa fa-circle fa-stack-2x"></i>
+  									<i class="fa fa-tripadvisor fa-stack-1x fa-inverse"></i>
+								</a>
+							</li>
+							<li><a href="https://www.facebook.com/LagunaVillasYaoNoi" target="_blank">
+									<span class="fa-stack fa-lg">
+  									<i class="fa fa-circle fa-stack-2x"></i>
+  									<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+								</a>
+							</li>
+							<li><a href="https://www.instagram.com/laguna_villas_yao_noi/" target="_blank">
+									<span class="fa-stack fa-lg">
+  									<i class="fa fa-circle fa-stack-2x"></i>
+  									<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+								</a>
+							</li>
+							<li><a href="https://www.youtube.com/channel/UCqFsilaNxDgJTwlNAcpvsfg" target="_blank">
+									<span class="fa-stack fa-lg">
+  									<i class="fa fa-circle fa-stack-2x"></i>
+  									<i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+								</a>
+							</li>
+						</ul>
+				</div>
+				<div class="footer-column">
+					<div class="footer-accommodation">
+						<ul>
+							<li>Accommodation</li>
+							<li><a href="dbs.html">Deluxe Beach Suite</a></li>
+							<li><a href="dss.html">Deluxe Sunrise Suite</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-column">
+					<div class="footer-accommodation">
+						<ul>
+							<li>Activity</li>
+							<li><a href="#">Restaurant & Bar</a></li>
+							<li><a href="#">Island Dining</a></li>
+							<li><a href="#">Leisure & Activities</a></li>
+							<li><a href="#">Weddings & Honeymoons</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-column">
+					<div class="footer-accommodation">
+						<ul>
+								<li>Info</li>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="location.html">How to get here</a></li>
+							</ul>
+					</div>
+				</div>
+				<div class="footer-column">
+					<div class="footer-accommodation footer-contact">
+						<ul>
+							<li>Contact us</li>
+							<li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 29/28 Moo 5, Koh Yao Noi,<br>Phang Nga, Thailand, 82160</a></li>
+							<li><a href="tel:+66076410813"><i class="fa fa-phone" aria-hidden="true"></i> +66 (0) 76 410 813</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<p class="copyright" style="color: #fff">© 2017 All Rights Reserved.</p>
+
+	</footer>
+	<div class="top" title="Наверх"><div class="i fa fa-angle-up"></div></div>
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

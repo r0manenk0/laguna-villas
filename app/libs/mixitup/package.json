@@ -1,0 +1,105 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "mixitup",
+        "scope": null,
+        "escapedName": "mixitup",
+        "name": "mixitup",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "D:\\work_web\\laguna\\laguna"
+    ]
+  ],
+  "_from": "mixitup@latest",
+  "_id": "mixitup@3.2.1",
+  "_inCache": true,
+  "_location": "/mixitup",
+  "_nodeVersion": "7.2.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/mixitup-3.2.1.tgz_1498560894144_0.3890510378405452"
+  },
+  "_npmUser": {
+    "name": "kunkalabs",
+    "email": "info@kunkalabs.com"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "mixitup",
+    "scope": null,
+    "escapedName": "mixitup",
+    "name": "mixitup",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/mixitup/-/mixitup-3.2.1.tgz",
+  "_shasum": "c5e186bd62662163391bdfa75e3a49c552d39598",
+  "_shrinkwrap": null,
+  "_spec": "mixitup",
+  "_where": "D:\\work_web\\laguna\\laguna",
+  "author": {
+    "name": "KunkaLabs Limited"
+  },
+  "dependencies": {},
+  "description": "A high-performance, dependency-free library for animated filtering, sorting and more",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "chai-shallow-deep-equal": "^1.4.0",
+    "coveralls": "^2.11.14",
+    "gulp": "^3.8.8",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^1.8.5",
+    "gulp-livereload": "~2.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "~1.5.1",
+    "istanbul": "^0.4.5",
+    "jsdom": "9.4.2",
+    "jsdom-global": "2.0.0",
+    "jshint-stylish": "~1.0.0",
+    "merge-stream": "^0.1.7",
+    "mixitup-build": "git://github.com/patrickkunka/mixitup-build.git",
+    "mocha": "^3.0.2",
+    "mocha-lcov-reporter": "^1.2.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "c5e186bd62662163391bdfa75e3a49c552d39598",
+    "tarball": "https://registry.npmjs.org/mixitup/-/mixitup-3.2.1.tgz"
+  },
+  "gitHead": "1a4699d4dd35ba91c535290e9e281ec224521849",
+  "homepage": "https://www.kunkalabs.com/mixitup/",
+  "license": "SEE LICENSE IN README.md",
+  "main": "./dist/mixitup.js",
+  "maintainers": [
+    {
+      "name": "kunkalabs",
+      "email": "info@kunkalabs.com"
+    }
+  ],
+  "name": "mixitup",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patrickkunka/mixitup/"
+  },
+  "scripts": {
+    "cover": "istanbul cover _mocha ./tests/unit/main.js",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
+    "test": "mocha ./tests/unit/main.js"
+  },
+  "title": "MixItUp",
+  "version": "3.2.1"
+}
